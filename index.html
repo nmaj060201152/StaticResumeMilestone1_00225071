@@ -1,0 +1,76 @@
+<!-- html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Static Resume</title>
+</head>
+<!-- Page Heading -->
+<body>
+    <h1 class="page-title">STATIC RESUME</h1>
+
+    <div class="container">
+        <!-- Left Panel with buttons and image -->
+        <div id="left-panel">
+            <div id="image-section">
+                <!-- Profile Picture -->
+                <img src="https://cricclubs.com/documentsRep/profilePics/a8efb073-cc21-44dc-bb7e-5dcc43c5a1fa.jpeg">
+            </div>
+            <div id="buttons-section">
+                <!-- Control buttons for toggling sections -->
+                <button id="bulb-button1" class="bulb" onclick="showhidee('showhide1')">Show Personal Info</button>
+                <button id="bulb-button2" class="bulb" onclick="showhidee('showhide2')">Show Education</button>
+                <button id="bulb-button3" class="bulb" onclick="showhidee('showhide3')">Show Experience</button>
+                <button id="bulb-button4" class="bulb" onclick="showhidee('showhide4')">Show Skills</button>
+                
+                <!-- Extra buttons for theme and mode -->
+                <div id="extra-buttons">
+                    <button onclick="changeTheme()">Change Theme</button>
+                    <button onclick="toggleDarkMode()">Dark Mode</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Panel for content sections -->
+        <div id="right-panel">
+            <section id="showhide1">
+                <h2>Personal Info</h2>
+                <ul>
+                    <li>Name: Navaid Majeed Sumalani</li>
+                    <li>Email: abc@gmail.com</li>
+                    <li>Contact No: 12345678</li>
+                    <li>Address: H.No D45, 29 St Down Street, London, UK</li>
+                </ul>
+            </section>
+            <section id="showhide2">
+                <h2>Education</h2>
+                <ul>
+                    <li>O'Level: Highgate School, London UK</li>
+                    <li>A'Lavel: Highgate School, London UK</li>
+                    <li>Engineering: Imperial College, London UK</li>
+                </ul>
+            </section>
+            <section id="showhide3">
+                <h2>Experience</h2>
+                <ul>
+                    <li>Work Place: Civil Secretariate, Balochistan at Quetta</li>
+                    <li>Start Date: December, 2001</li>
+                    <li>End Date: to Date</li>
+                </ul>
+            </section>
+            <section id="showhide4">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Multitasker</li>
+                    <li>Fast learner</li>
+                    <li>Management</li>
+                    <li>Good Communication</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
